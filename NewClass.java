@@ -12,16 +12,21 @@ package helloworld;
 //Adithya Krishnan
 //Task 5-Express minutes in terms of years and days
 import java.util.Scanner;
-public class NewClass {
-    public static void main(String args[]){
-        int minutes,days,years,rem_mins;
-        Scanner sc=new Scanner(System.in);
-        System.out.println("Minutes: ");
-        minutes=sc.nextInt();
-        sc.close();
-        days=minutes/1440;
-        years=minutes/525600;
-        rem_mins=days%525600;
-        System.out.println(minutes+" minutes is "+years+" years and "+days+"days");
+
+public class Ch2_Exercise2_7 {
+  public static void main(String[] args) {
+    Scanner input = new Scanner(System.in);
+    // Prompt user for number of minutes
+    System.out.println("Enter the number of minutes:");
+    int minutes = input.nextInt();
+
+     // Number of minutes in a year
+    int year = minutes / 525600;
+    int day = minutes / 1440;
+    int remainingMinutes = day % 525600;
+
+
+    System.out.println(minutes + " minutes is " + year + " years and "  +  remainingMinutes + " days ");
     }
-}
+
+   }
