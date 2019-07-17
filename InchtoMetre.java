@@ -17,8 +17,8 @@ public class InchtoMetre {
         double in,met;
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter measurement in inch: ");
-        in=sc.nextDouble();
-        met=in*0.0254;
-        System.out.println("Equivalent measurement in metres: "+met);
+        met=sc.nextDouble();
+        in=met/0.0254;
+        System.out.println("Equivalent measurement in metres: "+in);
     }
 }
