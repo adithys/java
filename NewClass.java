@@ -9,6 +9,16 @@ package helloworld;
  *
  * @author User
  */
+//*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ *
+ * @author User
+ */
 //Adithya Krishnan
 //Task-5-To express minutes in terms of days and years
 import java.util.Scanner;
