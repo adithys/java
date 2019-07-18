@@ -10,23 +10,21 @@ package helloworld;
  * @author User
  */
 //Adithya Krishnan
-//Task 5-Express minutes in terms of years and days
+//Task-5-To express minutes in terms of days and years
 import java.util.Scanner;
+public class Mincnvtyrday {
+    public static void main(String args[]) {
+        double minutesInYear = 60 * 24 * 365;
 
-public class Ch2_Exercise2_7 {
-  public static void main(String[] args) {
-    Scanner input = new Scanner(System.in);
-    // Prompt user for number of minutes
-    System.out.println("Enter the number of minutes:");
-    int minutes = input.nextInt();
+        Scanner sc = new Scanner(System.in);
 
-     // Number of minutes in a year
-    int year = minutes / 525600;
-    int day = minutes / 1440;
-    int remainingMinutes = day % 525600;
+        System.out.print("Input the number of minutes: ");
 
+        double min = sc.nextDouble();
 
-    System.out.println(minutes + " minutes is " + year + " years and "  +  remainingMinutes + " days ");
+        long years = (long) (min / minutesInYear);
+        int days = (int) (min / 60 / 24) % 365;
+
+        System.out.println((int) min + " minutes is approximately " + years + " years and " + days + " days");
     }
-
-   }
+}
